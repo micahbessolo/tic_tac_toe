@@ -1,4 +1,4 @@
-<h1>Current Player: {{ player }}</h1>
+<h3>Current Player: {{ player }}</h3>
 
 <button nbButton outline status="danger"(click)="newGame()">Start new Game</button>
 
@@ -11,6 +11,5 @@
     *ngFor="let val of squares; let i = index"
     [value]="val"
     (click)="makeMove(i)">
-
   </app-square>
 </main>
